@@ -46,17 +46,15 @@ Rename /api/v1/Config.example.php to /api/v1/Config.php and make any changes you
 
 ### Endpoints
 
-GET	/api/v1/grocery_items/	lists all remembered grocery items
-GET	/api/v1/grocery_items/list	lists all remembered grocery items
-GET	/api/v1/grocery_items/find/{search_str}	finds all grocery items where grocery_item_name matches any word of {search_str}~
-GET	/api/v1/grocery_items/{id}	gets a specific grocery item by {id}
-POST	/api/v1/grocery_items/	remembers a new grocery item (post data: name={grocery_item_name}
-DELETE	/api/v1/grocery_items/{id}	lists all remembered grocery items
-
-GET	/api/v1/grocery_list_items/{id}	lists all grocery items in the list with id = {id}
-GET	/api/v1/grocery_list_items/{id}/list	lists all grocery items in the list with id = {id}
-POST	/api/v1/grocery_list_items/{id}/{grocery_item_id}	adds the grocery item with id = {gorcery_item_id} to the list with id = {id}
+*   GET	/api/v1/grocery_items/	lists all remembered grocery items
+*   GET	/api/v1/grocery_items/list	lists all remembered grocery items
+*   GET	/api/v1/grocery_items/find/{search_str}	finds all grocery items where grocery_item_name matches any word of {search_str}~
+*   GET	/api/v1/grocery_items/{id}	gets a specific grocery item by {id}
+*   POST	/api/v1/grocery_items/	remembers a new grocery item (post data: name={grocery_item_name}
+*   DELETE	/api/v1/grocery_items/{id}	lists all remembered grocery items
+*   GET	/api/v1/grocery_list_items/{id}	lists all grocery items in the list with id = {id}
+*   GET	/api/v1/grocery_list_items/{id}/list	lists all grocery items in the list with id = {id}
+*   POST	/api/v1/grocery_list_items/{id}/{grocery_item_id}	adds the grocery item with id = {gorcery_item_id} to the list with id = {id}
 	(post data: name={gorcery_item_name}, quantity, comment)
-PUT	/api/v1/grocery_list_items/{id}/{grocery_item_id}	modifies the quantity or the comment of the item within the grocery list
-
-DELETE	/api/v1/grocery_list_items/{id}/{grocery_item_id}	removes the grocery item with id = {grocery_item_id} from the list with id = {id}
+*   PUT	/api/v1/grocery_list_items/{id}/{grocery_item_id}	modifies the quantity or the comment of the item within the grocery list
+*   DELETE	/api/v1/grocery_list_items/{id}/{grocery_item_id}	removes the grocery item with id = {grocery_item_id} from the list with id = {id}
